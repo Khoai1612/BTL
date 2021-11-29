@@ -1,0 +1,59 @@
+﻿@model QuanLyDiem.Models.DiemHocSinh
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DiemHocSinh</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Diem15Phut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Diem15Phut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Diem1Tiet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Diem1Tiet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiemHK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemHK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiemTBHK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemTBHK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GhiChu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DiemMieng }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
